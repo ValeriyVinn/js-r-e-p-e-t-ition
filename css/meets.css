@@ -1,0 +1,190 @@
+/* body {
+    padding: 90px 0;
+  }
+  
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+  
+  .is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .pets {
+    display: flex;
+  }
+  
+  .petCard {
+    flex-basis: calc(100% / 4 - 30px);
+    background-color: rgb(230, 209, 209);
+    margin: 15px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  button {
+    background: #5c068a;
+    color: #fff;
+    padding: 10px 30px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  } */
+
+
+  h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-color:lightblue;
+  margin: 0 auto;
+  
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+.nav-link {
+  text-decoration: underline 2px royalblue dotted;
+  font-size: 24px;
+  color: royalblue;
+  
+}
+
+.nav-link:not(:last-child) {
+margin-right: 15px;
+}
+
+.nav{
+  padding: 15px 0px ;
+}
+
+a:hover {
+  color: darkblue;
+  text-decoration: underline 2px darkblue;
+}
+
+  input {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 30px;
+  }
+  input[type="submit"] {
+    border: none;
+    background-color:royalblue;
+    color: white;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color:darkblue;
+  }
+
+
+  
+  #newsWrapper {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .article-card {
+    width: 90%;
+    text-align: left;
+    border-radius: 5px;
+    background-color:rgb(152, 178, 255);
+    padding: 20px;
+  }
+  
+  .article-img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .article-link {
+    text-transform: uppercase;
+    border-radius: 15px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgba(45, 45, 233, 0.731);
+    color: white;
+    padding: 10px 20px;
+  }
+.section {
+  min-width: 700px;
+  min-height: 700px;
+  margin: 20px auto;
+  padding: 20px 40px;
+  
+}
+
+.header {
+  font-size: 28px;
+  color:darkblue;
+}
+
+#form {
+    margin-top: 40px;
+}

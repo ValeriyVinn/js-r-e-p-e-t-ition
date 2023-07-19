@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 250px;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul li:nth-child(even) {
+  background: #f5f2f2;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+ul li:hover {
+  background-color: #d4d1d1;
+}
+
+ul li.checked {
+  background-color: #f2f2f2;
+  color: #888;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 7px;
+  border-color: green;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  height: 10px;
+  width: 5px;
+}
+
+.container {
+  width: 900px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  color: #797575;
+  font-size: 28px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: rgb(255, 0, 0);
+}
+
+.header {
+  background-color: #65a2a3;
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.header input {
+  border: none;
+  border-radius: 5px;
+  width: 60%;
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.addBtn {
+  display: inline-block;
+  padding: 10px;
+  width: 20%;
+  background-color: #5e8e8f;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addBtn:hover {
+  background-color: #4c7475;
+}
+
+.todo-list {
+  max-width: 90%;
+  margin: 5px auto;
+  padding: 20px 20px 20px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.todo-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: #71aeaf;
+}
