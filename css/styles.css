@@ -431,4 +431,23 @@ border-radius: 3px;
 .dropdown:hover .dropbtn {background-color:seagreen;}
 
 
-/* ! ======================================= */
+/* ! ====================== card-hover-effect ================= */
+
+.card-hover-effect {
+  display: flex;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.card {
+  height: 100px;
+  background:cadetblue;
+  flex: 1;
+  transition: .5s;
+  margin: 5px;
+}
+
+.card:hover {
+  flex: 5;
+  background:royalblue;
+}
