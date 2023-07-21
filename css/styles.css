@@ -69,6 +69,7 @@ input[type="submit"] {
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
+  margin-left: 10px;
   color:darkgreen;
   background: linear-gradient(to left, darkgreen 50%, white 50%);
   background-size: 200% 99%;
@@ -101,6 +102,7 @@ input[type="submit"]:active {
   width: 90%;
   text-align: left;
   border-radius: 5px;
+  border: 1px solid darkblue;
   background-color: rgb(152, 178, 255);
   padding: 20px;
 }
@@ -133,6 +135,7 @@ input[type="submit"]:active {
 
 #form {
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 /* ========================= Кнопка Дивимось ================================= */
@@ -434,6 +437,7 @@ border-radius: 3px;
 /* ! ====================== card-hover-effect ================= */
 
 .card-hover-effect {
+  cursor: help;
   display: flex;
   margin: 10px;
   border-radius: 15px;
@@ -441,7 +445,7 @@ border-radius: 3px;
 
 .card {
   height: 100px;
-  background:cadetblue;
+  background:khaki;
   flex: 1;
   transition: .5s;
   margin: 5px;
@@ -449,5 +453,5 @@ border-radius: 3px;
 
 .card:hover {
   flex: 5;
-  background:royalblue;
+  background:lemonchiffon;
 }
