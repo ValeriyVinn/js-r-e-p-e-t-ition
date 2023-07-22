@@ -188,3 +188,4 @@ const arr2 = na.split("")
 
 console.log(arr2)
 console.log(arr2 === na)
+
