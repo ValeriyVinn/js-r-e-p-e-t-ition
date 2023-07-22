@@ -11,6 +11,7 @@ controls.addEventListener("click", (e) => {
   }
 
   const paneId = e.target.dataset.id;
+  console.dir(e.target)
   const nextActivePane = document.querySelector(`#${paneId}`);
   nextActivePane.classList.add("is-active");
 });

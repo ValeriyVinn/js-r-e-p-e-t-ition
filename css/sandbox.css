@@ -435,29 +435,47 @@ display: block;
   }
 
 
-  *,
+  /* *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+} */
 
-body {
+/* body {
   font-family: sans-serif;
   line-height: 1.5;
   color: #212121;
   background-color: #f9f9fd;
-}
+} */
 
 .pane {
   display: none;
   margin-top: 8px;
+
 }
 
 .pane.is-active {
   display: block;
+  
 }
 
 .controls {
   display: flex;
   gap: 8px;
 }
+
+.cats {
+  background-color: black;
+  color: white;
+  min-width:  101px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid white;
+}
+
+.cats-img {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+
