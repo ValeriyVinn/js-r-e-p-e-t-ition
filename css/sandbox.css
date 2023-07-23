@@ -86,4 +86,38 @@ font-size: 50px;
     text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #000000;
   }
 
+  .hello {
+    display: inline-block;
+    color:lightblue;
+    font-size: 70px;
+    font-weight: 700;
+    transition: color 0.3s;
+    min-width: 30px;
+  }
+  .hello:hover span:nth-child(1) {
+    color: red;
+    transition-duration: 0.2s;
+    /* text-shadow: 2px 2px 4px white; */
+  }
+  .hello:hover span:nth-child(2) {
+    color:rgb(0, 134, 0);
+    transition-duration: 0.5s;
+    /* text-shadow: 2px 2px 4px #fe02e1; */
+  }
+  .hello:hover span:nth-child(3) {
+    color:blue;
+    transition-duration: 0.8s;
+    /* text-shadow: 2px 2px 4px yellow; */
+  }
+  .hello:hover span:nth-child(4) {
+    color:yellow;
+    transition-duration: 1.1s;
+    /* text-shadow: 2px 2px 4px blue; */
+  }
+  .hello:hover span:nth-child(5) {
+    color:darkviolet;
+    transition-duration: 1.4s;
+    /* text-shadow: 2px 2px 4px orange; */
+  }
+  
   
