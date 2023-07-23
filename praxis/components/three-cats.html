@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three cats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/three-cats.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <nav class="nav">
+        <a href="../../index.html" class="nav-link">Home</a>
+        <a href="../../english-study.html" class="nav-link">English-study</a>
+        <a href="../../meets.html" class="nav-link">Meets</a>
+        <a href="../../sandbox.html" class="nav-link">Sandbox</a>
+        <a href="../praxis.html" class="nav-link">Praxis</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section container">
+        <div class="tabs">
+          <div class="controls">
+            <button data-id="pane-1" class="cats">First cat</button>
+            <button data-id="pane-2" class="cats">Second cat</button>
+            <button data-id="pane-3" class="cats">Third cat</button>
+          </div>
+
+          <div id="pane-1" class="pane is-active">
+            <img
+              src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg"
+              width="320"
+              alt=""
+              class="cats-img"
+            />
+            <p>
+              <b>1</b> - Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ipsum vitae quam ea dolorum nisi at illo sunt voluptates,
+              mollitia nihil assumenda recusandae nobis eius adipisci
+              consectetur, omnis corrupti culpa nesciunt architecto minus
+              commodi!
+            </p>
+          </div>
+          <div id="pane-2" class="pane">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg"
+              width="320"
+              alt=""
+              class="cats-img"
+            />
+            <p>
+              <b>2</b> - Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Explicabo saepe molestiae fugit! Officiis voluptate,
+              voluptas asperiores laudantium, ea vero distinctio quas quod porro
+              possimus velit architecto?
+            </p>
+          </div>
+          <div id="pane-3" class="pane">
+            <img
+              src="https://cdn.pixabay.com/photo/2020/10/01/11/41/cat-5618328_1280.jpg"
+              width="320"
+              alt=""
+              class="cats-img"
+            />
+            <p>
+              <b>3</b> - Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Sit natus cupiditate atque ullam illo repudiandae, ab quam
+              ea soluta, voluptates optio libero, perspiciatis laboriosam
+              commodi ipsa eligendi. Minus, vitae quam! Eius illo atque iste
+              labore eligendi natus porro. Aliquam laborum ad architecto beatae
+              aut nesciunt expedita adipisci voluptates.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../scripts/three-cats.js" type="module"></script>
+  </body>
+</html>
