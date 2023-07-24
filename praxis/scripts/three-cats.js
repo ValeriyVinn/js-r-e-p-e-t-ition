@@ -15,3 +15,11 @@ controls.addEventListener("click", (e) => {
   const nextActivePane = document.querySelector(`#${paneId}`);
   nextActivePane.classList.add("is-active");
 });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const button = document.getElementById("cats");
+
+//   button.addEventListener("click", function () {
+//     button.classList.toggle("clickedColor");
+//   });
+// });
