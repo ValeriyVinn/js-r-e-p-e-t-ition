@@ -121,3 +121,46 @@ font-size: 50px;
   }
   
   
+  .papa {
+    display: flex;
+    outline: 1px solid blue;
+    align-items: center;
+    width: 340px;
+    height: 70px;
+  }
+  
+  .son-first,
+  .son-second,
+  .son-third,
+  .son-fourth,
+  .son-fifth  {
+    width: 30px;
+    height: 30px;
+    background: blue;
+    margin-left: 30px;
+  }
+
+  .son-first:hover {
+    cursor: pointer;
+    transform: translate(5px, 0px)
+  }
+  .son-second:hover {
+    cursor: pointer;
+    transform: rotate(45deg)
+  }
+  .son-third:hover {
+    cursor: pointer;
+    transform: skew(-5deg, -10deg);
+  }
+  .son-fourth:hover {
+    cursor: pointer;
+    transform: scale(0.7);
+  }
+  .son-fifth:hover {
+    cursor: pointer;
+    transform: matrix(0, 1, 1, 0, 0, 0);
+    
+  }
+
+
+ 

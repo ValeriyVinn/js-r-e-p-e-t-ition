@@ -51,6 +51,7 @@ input {
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 30px;
+
 }
 
 /* input[type="submit"] {
@@ -65,11 +66,12 @@ input[type="submit"]:hover {
 } */
 
 
+
 input[type="submit"] {
   position: relative;
   display: inline-block;
   font-size: 28px;
-  width: 120px;
+  min-width: 120px;
   height: 58px;
   font-weight: 600;
   border: none;

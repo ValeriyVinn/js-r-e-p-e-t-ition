@@ -1,0 +1,60 @@
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+ul {
+  list-style-type: none;
+}
+
+/* .list {
+  list-style-type: space-counter;
+} */
+
+.container {
+    background-color: darkseagreen;
+    margin: 0 auto;
+  
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: underline 2px royalblue dotted;
+    font-size: 24px;
+    color: royalblue;
+  }
+  
+  .nav-link:not(:last-child) {
+    margin-right: 15px;
+  }
+  
+  .nav {
+    padding: 15px 0px;
+
+  }
+
+  .section {
+    min-width: 700px;
+    min-height: 700px;
+    margin: 20px auto;
+    padding: 20px 40px;
+  }
+
+  .pets-nav {
+    display: flex;
+    flex-direction: column;
+  }
