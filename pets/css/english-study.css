@@ -31,13 +31,18 @@ ul {
   .header {
     margin-bottom: 20px;
     margin-top: 10px;
-    color: red;
+    color: rgb(176, 255, 229);
   }
   
   .nav-link {
-    text-decoration: underline 2px royalblue dotted;
+    text-decoration: underline 2px rgb(176, 255, 229) dotted;
     font-size: 24px;
-    color: royalblue;
+    color: rgb(176, 255, 229);
+  }
+
+  .nav-link:hover {
+    color: red;
+    text-decoration: underline 2px red dotted;
   }
   
   .nav-link:not(:last-child) {
@@ -91,7 +96,7 @@ ul {
     border-radius: 5px;
     padding: 10px 20px;
     margin-left: 10px;
-    color:red;
+    color:rgb(176, 255, 229);
     background: linear-gradient(to left, pink 50%, white 50%);
     outline: 1px solid red;
     background-size: 200% 99%;
@@ -101,7 +106,7 @@ ul {
   
   input[type="submit"]:hover {
     background-position: -100% 0;
-    color:rgb(176, 255, 229);
+    color:red;
   }
   
 
@@ -122,8 +127,9 @@ ul {
     width: 90%;
     text-align: left;
     border-radius: 5px;
-    border: 1px solid darkblue;
-    background-color: rgb(152, 178, 255);
+    border: 1px solid red;
+    color: red;
+    background-color: rgb(176, 255, 229);
     padding: 20px;
   }
   
