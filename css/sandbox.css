@@ -51,6 +51,13 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.section {
+  margin-bottom: 20px;
+
+}
+
+
+
 /* ! ====================== card-hover-effect ================= */
 
 .site-nav .link {
@@ -201,3 +208,5 @@ font-size: 50px;
     top: 200px;
     background-color: #555 /* Light Black */
   }
+
+ 

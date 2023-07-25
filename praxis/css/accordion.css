@@ -1,0 +1,107 @@
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+ul {
+  list-style-type: none;
+}
+
+/* .list {
+  list-style-type: space-counter;
+} */
+
+.container {
+    background-color: darkseagreen;
+    margin: 0 auto;
+  
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: underline 2px royalblue dotted;
+    font-size: 24px;
+    color: royalblue;
+  }
+  
+  .nav-link:not(:last-child) {
+    margin-right: 15px;
+  }
+  
+  .nav {
+    padding: 15px 0px;
+
+  }
+
+  .section {
+    min-width: 700px;
+    min-height: 700px;
+    margin: 20px auto;
+    padding: 20px 40px;
+  }
+
+  .accordion {
+    display: block;
+    background-color:rgb(209, 219, 228);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    width: 400px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color:aliceblue;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+
+  /* !----------------without animation----------- */
+  /* .panel {
+    padding: 0 18px;
+    background-color:rgb(179, 201, 224);
+    display: none;
+    overflow: hidden;
+  } */
+  /* !----------------without animation----------- */
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  /* *----------------with animation----------- */
+  .panel {
+    padding: 0 18px;
+    background-color: rgb(179, 201, 224);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  /* *----------------with animation----------- */
