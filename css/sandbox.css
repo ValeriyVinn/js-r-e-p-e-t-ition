@@ -141,9 +141,18 @@ font-size: 50px;
     background-color: white;
     align-items: center;
     /* width: 600px; */
-    height: 120px;
-    
+    /* height: 120px; */
+  
+  }
 
+  .mama{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .son {
+    width: 500px;
   }
 
   .papa:not(:last-child) {
@@ -165,7 +174,7 @@ font-size: 50px;
 font-size: 26px;
     text-align: center;
     padding: 27px;
-    transition: transform 1s;
+    transition: transform 0.5s;
   }
 
   .son-first:hover {

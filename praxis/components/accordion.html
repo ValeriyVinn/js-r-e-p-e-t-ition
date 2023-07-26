@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Three cats</title>
+    <title>Accordion</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,6 +34,74 @@
     <main>
       <section class="section container">
         <p></p>
+
+        <button class="button-open" data-action="open-modal">Code</button>
+
+        <div class="backdrop js-backdrop">
+          <div class="modal">
+            <pre><code class="language-html"><h2>html</h2>
+  &ltbutton class="accordion"&gtRed&lt/button&gt
+  &ltdiv class="panel"&gt
+  &ltp&gt
+      Any of a range of colours having the longest wavelengths, 670
+      nm, of the visible spectrum; a primary additive colour for
+      transmitted light: the colour obtained by subtracting green
+      and blue from white light using magenta and yellow filters;
+      the colour of blood, ripe strawberries, etc.
+  &lt/p&gt
+  &lt/div&gt
+
+  &ltbutton class="accordion">Green&lt/button>
+  &ltdiv class="panel"&gt
+  &ltp&gt
+      Green is the color between cyan and yellow on the visible
+      spectrum. It is evoked by light which has a dominant
+      wavelength of roughly 495–570 nm.
+  &lt/p&gt
+  &lt/div&gt
+
+  &ltbutton class="accordion">Blue&lt/button&gt
+  &ltdiv class="panel"&gt
+  &ltp&gt
+      The colour of the clear sky or the deep sea, between green and
+      violet in the visible spectrum, and one of the primary
+      additive colours for transmitted light; the colour obtained by
+      subtracting red and green from white light using magenta and
+      cyan filters; or any colour resembling this.
+  &lt/p&gt
+  &lt/div&gt
+</code></pre>
+
+<pre><code class="language-javascript"><h2>js</h2>
+const acc = document.getElementsByClassName("accordion");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    const panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+
+</code></pre>
+
+            <div></div>
+
+            <button
+              type="button"
+              class="button-close"
+              data-action="close-modal"
+            >
+              Закрыть
+            </button>
+          </div>
+        </div>
 
         <button class="accordion">Red</button>
         <div class="panel">
