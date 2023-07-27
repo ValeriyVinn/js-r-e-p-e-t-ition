@@ -9,8 +9,6 @@ a {
   text-decoration: none;
 }
 
-
-
 ul {
   list-style-type: none;
 }
@@ -51,7 +49,6 @@ input {
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 30px;
-
 }
 
 /* input[type="submit"] {
@@ -65,8 +62,6 @@ input[type="submit"]:hover {
   background-color: darkblue;
 } */
 
-
-
 input[type="submit"] {
   position: relative;
   display: inline-block;
@@ -78,7 +73,7 @@ input[type="submit"] {
   border-radius: 5px;
   padding: 10px 20px;
   margin-left: 10px;
-  color:darkgreen;
+  color: darkgreen;
   background: linear-gradient(to left, darkgreen 50%, white 50%);
   background-size: 200% 99%;
   transition: background-position 0.5s, color 0.6s;
@@ -88,14 +83,13 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-position: -100% 0;
   /* color:orange; */
-  color:rgb(176, 255, 229);
+  color: rgb(176, 255, 229);
 }
 
 input[type="submit"]:active {
   /* background-position: -99% 0; */
-  color:white;
+  color: white;
   font-size: 29px;
-  
 }
 
 #newsWrapper {
@@ -179,16 +173,15 @@ input[type="submit"]:active {
   padding: 10px 20px;
   color: red;
   background: linear-gradient(to top, orange 50%, black 50%);
-  background-size: 100% 200%; 
+  background-size: 100% 200%;
   transition: background-position 0.5s, border-bottom 0.5s, color 0.5s;
 }
 
 .color-transition:hover {
   background-position: 0 100%;
   border-bottom: 10px solid orange;
-  color:orangered;
+  color: orangered;
 }
-
 
 /* ================================================ */
 /* А не можна в цьому коді застосувати два кута градієнта, щоб утворився кут з вершиною по середині кнопки?
@@ -238,8 +231,6 @@ input[type="submit"]:active {
 Надіюся, це допоможе вам досягти бажаного ефекту! Якщо у вас є ще запитання, будь ласка, повідомте мене.
  */
 
-
-
 /* ========================================================== */
 .color-button {
   position: relative;
@@ -264,8 +255,8 @@ input[type="submit"]:active {
 
 .color-button:hover {
   background-position: -100% 0;
-  
-  color:orange;
+
+  color: orange;
 }
 
 /* ================================================================= */
@@ -316,27 +307,27 @@ a:hover:before{
 
 .button-middle {
   height: 42px;
-	border: none;
-	background: #3a7999;
-	color: #f2f2f2;
-	padding: 10px;
-	font-size: 18px;
-	border-radius: 5px;
-	position: relative;
-	box-sizing: border-box;
-	transition: all 500ms ease; 
+  border: none;
+  background: #3a7999;
+  color: #f2f2f2;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 500ms ease;
 }
 
 .button-middle:before {
-  content:'';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 42px;
-	background: rgba(255,255,255,0.3);
-	border-radius: 5px;
-	transition: all 2s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  transition: all 2s ease;
 }
 .button-middle:hover:before {
   width: 100%;
@@ -348,7 +339,7 @@ a:hover:before{
 
 .hello {
   display: inline-block;
-  color:lightblue;
+  color: lightblue;
   font-size: 70px;
   font-weight: 700;
   transition: color 0.3s;
@@ -360,27 +351,25 @@ a:hover:before{
   /* text-shadow: 2px 2px 4px white; */
 }
 .hello:hover span:nth-child(2) {
-  color:rgb(0, 134, 0);
+  color: rgb(0, 134, 0);
   transition-duration: 0.5s;
   /* text-shadow: 2px 2px 4px #fe02e1; */
 }
 .hello:hover span:nth-child(3) {
-  color:blue;
+  color: blue;
   transition-duration: 0.8s;
   /* text-shadow: 2px 2px 4px yellow; */
 }
 .hello:hover span:nth-child(4) {
-  color:yellow;
+  color: yellow;
   transition-duration: 1.1s;
   /* text-shadow: 2px 2px 4px blue; */
 }
 .hello:hover span:nth-child(5) {
-  color:darkviolet;
+  color: darkviolet;
   transition-duration: 1.4s;
   /* text-shadow: 2px 2px 4px orange; */
 }
-
-
 
 .analog-button {
   /* color: #fff; */
@@ -399,17 +388,16 @@ a:hover:before{
 .analog-button:active {
   background-color: #b9dbec;
   color: red;
-transform: translateY(3px) translateX(3px);
-box-shadow: #132933 0px 0px 0px;
+  transform: translateY(3px) translateX(3px);
+  box-shadow: #132933 0px 0px 0px;
 }
-
 
 /* =============================== Hoverable Dropdown ============================ */
 
 .dropbtn {
   margin-left: 10px;
-border-radius: 3px;
-  background-color: #04AA6D;
+  border-radius: 3px;
+  background-color: #04aa6d;
   color: white;
   padding: 16px;
   font-size: 20px;
@@ -417,7 +405,6 @@ border-radius: 3px;
 }
 
 .dropdown {
-  
   position: relative;
   display: inline-block;
 }
@@ -429,25 +416,30 @@ border-radius: 3px;
   position: absolute;
   background-color: #f1f1f1;
   min-width: 260px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
   color: black;
   font-size: 16px;
-  
+
   padding: 4px 10px;
   /* text-decoration: none; */
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #04AA6D;}
+.dropdown-content a:hover {
+  background-color: #04aa6d;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-.dropdown:hover .dropbtn {background-color:seagreen;}
-
+.dropdown:hover .dropbtn {
+  background-color: seagreen;
+}
 
 /* ! ====================== card-hover-effect ================= */
 
@@ -460,20 +452,16 @@ border-radius: 3px;
 
 .card {
   height: 100px;
-  background:khaki;
+  background: khaki;
   flex: 1;
-  transition: .5s;
+  transition: 0.5s;
   margin: 5px;
 }
 
 .card:hover {
   flex: 5;
-  background:lemonchiffon;
+  background: lemonchiffon;
 }
-
-
-
-
 
 .site-nav .link {
   /* margin-bottom: 40px; */
@@ -484,18 +472,15 @@ border-radius: 3px;
   text-align: right;
 }
 
-.site-nav
- {
+.site-nav {
   margin-bottom: 40px;
-  
 }
-
 
 /* ======================= */
 
 .text-shadow {
-margin-top: 30px;
-font-size: 50px;
+  margin-top: 30px;
+  font-size: 50px;
   color: #ffffff;
   text-shadow: 2px 2px 4px #000000;
 }
@@ -504,145 +489,142 @@ font-size: 50px;
   font-style: italic;
   margin-top: 30px;
   font-size: 50px;
-    color: #ffffff;
-    text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #000000;
-  }
+  color: #ffffff;
+  text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #000000;
+}
 
-  .box-sizing-one {
-    outline: #ff0000;
-    font-size: 28px;
-    font-weight: 700;
-    box-sizing: border-box;
-    outline: 1px solid #ff0000;
-    border: 5px solid #6b5de3;
-    border-radius: 15px;
-    /* display: inline; */
-padding: 10px;
-/* margin: 10px; */
-    background-color: chartreuse;
-  }
+.box-sizing-one {
+  outline: #ff0000;
+  font-size: 28px;
+  font-weight: 700;
+  box-sizing: border-box;
+  outline: 1px solid #ff0000;
+  border: 5px solid #6b5de3;
+  border-radius: 15px;
+  /* display: inline; */
+  padding: 10px;
+  /* margin: 10px; */
+  background-color: chartreuse;
+}
 
-  .box-sizing-two {
-    outline: #ff0000;
-    font-size: 28px;
-    font-weight: 700;
-    box-sizing: border-box;
-    outline: 1px solid #ff0000;
-    border: 5px solid #6b5de3;
-    border-radius: 15px;
-    display: inline-block;
-padding: 20px;
-margin-top: 20px;
-    background-color: chartreuse;
-  }
+.box-sizing-two {
+  outline: #ff0000;
+  font-size: 28px;
+  font-weight: 700;
+  box-sizing: border-box;
+  outline: 1px solid #ff0000;
+  border: 5px solid #6b5de3;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: chartreuse;
+}
 
-  .box-sizing-three {
-    outline: #ff0000;
-    font-size: 28px;
-    font-weight: 700;
-    box-sizing: border-box;
-    outline: 1px solid #ff0000;
-    border: 5px solid #6b5de3;
-    border-radius: 15px;
-    /* display: inline; */
-padding: 30px;
-margin-top: 20px;
-    background-color: chartreuse;
-  }
-  .box-sizing-four {
-    outline: #ff0000;
-    font-size: 28px;
-    font-weight: 700;
-    box-sizing: border-box;
-    outline: 1px solid #ff0000;
-    border: 5px solid #6b5de3;
-    border-radius: 15px;
-    display: inline;
-padding: 40px;
-margin-top: 20px;
-    background-color: chartreuse;
-  }
+.box-sizing-three {
+  outline: #ff0000;
+  font-size: 28px;
+  font-weight: 700;
+  box-sizing: border-box;
+  outline: 1px solid #ff0000;
+  border: 5px solid #6b5de3;
+  border-radius: 15px;
+  /* display: inline; */
+  padding: 30px;
+  margin-top: 20px;
+  background-color: chartreuse;
+}
+.box-sizing-four {
+  outline: #ff0000;
+  font-size: 28px;
+  font-weight: 700;
+  box-sizing: border-box;
+  outline: 1px solid #ff0000;
+  border: 5px solid #6b5de3;
+  border-radius: 15px;
+  display: inline;
+  padding: 40px;
+  margin-top: 20px;
+  background-color: chartreuse;
+}
 
-  .box-sizing-five {
-    outline: #ff0000;
-    font-size: 28px;
-    font-weight: 700;
-    box-sizing: border-box;
-    outline: 2px solid #ff0000;
-    border: 5px solid #6b5de3;
-    border-radius: 15px;
-    /* display: inline; */
-padding: 50px;
-margin-top: 20px;
-margin-bottom: 20px;
-    background-color: chartreuse;
-  }
+.box-sizing-five {
+  outline: #ff0000;
+  font-size: 28px;
+  font-weight: 700;
+  box-sizing: border-box;
+  outline: 2px solid #ff0000;
+  border: 5px solid #6b5de3;
+  border-radius: 15px;
+  /* display: inline; */
+  padding: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: chartreuse;
+}
 
+.button-sizing-one {
+  background-color: chartreuse;
+  padding: 10px;
+  display: block;
+  outline: #ff0000;
+  font-size: 28px;
+  font-weight: 700;
+  box-sizing: border-box;
+  outline: 2px solid #ff0000;
+  border: 5px solid #6b5de3;
+  border-radius: 15px;
+}
 
-  .button-sizing-one {
-    background-color: chartreuse;
-    padding: 10px;
-display: block;
-    outline: #ff0000;
-    font-size: 28px;
-    font-weight: 700;
-    box-sizing: border-box;
-    outline: 2px solid #ff0000;
-    border: 5px solid #6b5de3;
-    border-radius: 15px;
-  }
+.button-sizing-two {
+  background-color: chartreuse;
+  padding: 10px;
+  display: inline;
+  outline: #ff0000;
+  font-size: 28px;
+  font-weight: 700;
+  box-sizing: border-box;
+  outline: 2px solid #ff0000;
+  border: 5px solid #6b5de3;
+  border-radius: 15px;
+}
 
-  .button-sizing-two {
-    background-color: chartreuse;
-    padding: 10px;
-display: inline;
-    outline: #ff0000;
-    font-size: 28px;
-    font-weight: 700;
-    box-sizing: border-box;
-    outline: 2px solid #ff0000;
-    border: 5px solid #6b5de3;
-    border-radius: 15px;
-  }
+.button-sizing-three {
+  background-color: chartreuse;
+  padding: 10px;
+  display: inline;
+  outline: #ff0000;
+  font-size: 28px;
+  font-weight: 700;
+  box-sizing: border-box;
+  outline: 2px solid #ff0000;
+  border: 5px solid #6b5de3;
+  border-radius: 15px;
+}
 
-  .button-sizing-three {
-    background-color: chartreuse;
-    padding: 10px;
-display: inline;
-    outline: #ff0000;
-    font-size: 28px;
-    font-weight: 700;
-    box-sizing: border-box;
-    outline: 2px solid #ff0000;
-    border: 5px solid #6b5de3;
-    border-radius: 15px;
-  }
+.button-sizing-four {
+  background-color: chartreuse;
+  padding: 10px;
+  height: 150px;
+  display: inline;
+  outline: #ff0000;
+  font-size: 28px;
+  font-weight: 700;
+  /* box-sizing: border-box; */
+  outline: 2px solid #ff0000;
+  border: 5px solid #6b5de3;
+  border-radius: 15px;
+}
 
-  .button-sizing-four {
-    background-color: chartreuse;
-    padding: 10px;
-    height: 150px;
-display: inline;
-    outline: #ff0000;
-    font-size: 28px;
-    font-weight: 700;
-    /* box-sizing: border-box; */
-    outline: 2px solid #ff0000;
-    border: 5px solid #6b5de3;
-    border-radius: 15px;
-  }
-
-  .button-sizing-five {
-    background-color: chartreuse;
-    padding: 10px;
-display: block;
-    outline: #ff0000;
-    font-size: 28px;
-    font-weight: 700;
-    box-sizing: border-box;
-    outline: 2px solid #ff0000;
-    border: 5px solid #6b5de3;
-    border-radius: 15px;
-  }
-
-
+.button-sizing-five {
+  background-color: chartreuse;
+  padding: 10px;
+  display: block;
+  outline: #ff0000;
+  font-size: 28px;
+  font-weight: 700;
+  box-sizing: border-box;
+  outline: 2px solid #ff0000;
+  border: 5px solid #6b5de3;
+  border-radius: 15px;
+}

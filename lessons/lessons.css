@@ -9,25 +9,13 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style-type: none;
-}
-
-/* .list {
-  list-style-type: space-counter;
-} */
-
 .container {
-  background-color: darkseagreen;
+  background-color: lightblue;
   margin: 0 auto;
 
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-}
-
-.header {
-  margin-bottom: 20px;
 }
 
 .nav-link {
@@ -44,6 +32,11 @@ ul {
   padding: 15px 0px;
 }
 
+a:hover {
+  color: darkblue;
+  text-decoration: underline 2px darkblue;
+}
+
 .section {
   min-width: 700px;
   min-height: 700px;
@@ -51,18 +44,26 @@ ul {
   padding: 20px 40px;
 }
 
-.pets-nav {
-  display: flex;
-  flex-direction: column;
+.header {
+  font-size: 38px;
+  color: gold;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 
-/* ====================== Hoverable Dropdown ================== */
+.header::first-letter {
+  font-size: 58px;
+  color: gold;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+/* ============ Hoverable Dropdown =============== */
 
 .dropbtn {
   margin-left: 10px;
   border-radius: 3px;
-  background-color: #04aa6d;
-  color: white;
+  background-color:  cornflowerblue;
+  color: gold;
+  font-weight: 500;
   padding: 16px;
   font-size: 20px;
   border: none;
@@ -89,13 +90,14 @@ ul {
   font-size: 16px;
 
   padding: 4px 10px;
-  /* text-decoration: none; */
+  text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #04aa6d;
-  color: white;
+  background-color: cornflowerblue;
+  font-weight: 500;
+  color: gold;
 }
 
 .dropdown:hover .dropdown-content {
@@ -103,5 +105,5 @@ ul {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: seagreen;
+  background-color: royalblue;
 }
