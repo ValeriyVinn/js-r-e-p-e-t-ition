@@ -21,6 +21,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/homeworks & codewars.css" />
+    <link rel="stylesheet" href="./css/prism.css" />
   </head>
 
   <body>
@@ -28,7 +29,9 @@
       <nav class="nav">
         <a href="./index.html" class="nav-link">Home</a>
         <!-- <a href="./english-study.html" class="nav-link">English-study</a> -->
-        <a href="./meets.html" class="nav-link">Homeworks & Codewars</a>
+        <a href="./homeworks & codewars.html" class="nav-link"
+          >Homeworks & Codewars</a
+        >
         <a href="./sandbox.html" class="nav-link">Sandbox</a>
         <a href="./praxis/praxis.html" class="nav-link">Praxis</a>
         <a href="./pets/pets.html" class="nav-link">Pets</a>
@@ -66,10 +69,74 @@
     <main>
       <section class="section container">
         <h1 class="header">Good luck!</h1>
+
+        <pre><code class="language-html">   
+          &#x3C;a href=&#x22;./homeworks &#x26; codewars.html&#x22; class=&#x22;nav-link&#x22;&#x3E;Homeworks &#x26; Codewars&#x3C;/a&#x3E;
+          &#x3C;a href=&#x22;./sandbox.html&#x22; class=&#x22;nav-link&#x22;&#x3E;Sandbox&#x3C;/a&#x3E;
+          &#x3C;a href=&#x22;./praxis/praxis.html&#x22; class=&#x22;nav-link&#x22;&#x3E;Praxis&#x3C;/a&#x3E;
+          &#x3C;a href=&#x22;./pets/pets.html&#x22; class=&#x22;nav-link&#x22;&#x3E;Pets&#x3C;/a&#x3E;
+</code></pre>
+
+        <pre><code class="language-css">
+  
+  .nav {
+  padding: 15px 0px;
+}
+
+a:hover {
+  color: darkblue;
+  text-decoration: underline 2px darkblue;
+}
+
+.section {
+  min-width: 700px;
+  min-height: 700px;
+  margin: 20px auto;
+  padding: 20px 40px;
+}
+</code></pre>
+
+        <pre><code class="language-js">
+  const refs = {
+  openModalBtn: document.querySelector('[data-action="open-modal"]'),
+  closeModalBtn: document.querySelector('[data-action="close-modal"]'),
+  backdrop: document.querySelector('.js-backdrop'),
+};
+
+refs.openModalBtn.addEventListener('click', onOpenModal);
+refs.closeModalBtn.addEventListener('click', onCloseModal);
+refs.backdrop.addEventListener('click', onBackdropClick);
+
+function onOpenModal() {
+  window.addEventListener('keydown', onEscKeyPress);
+  document.body.classList.add('show-modal');
+}
+
+function onCloseModal() {
+  window.removeEventListener('keydown', onEscKeyPress);
+  document.body.classList.remove('show-modal');
+}
+
+function onBackdropClick(event) {
+  if (event.currentTarget === event.target) {
+    console.log('Кликнули именно в бекдроп!!!!');
+    onCloseModal();
+  }
+}
+
+function onEscKeyPress(event) {
+  // console.log(event.code)
+  const ESC_KEY_CODE = 'Escape';
+  const isEscKey = event.code === ESC_KEY_CODE;
+
+  if (isEscKey) {
+    onCloseModal();
+  }
+}
+</code></pre>
       </section>
-      
     </main>
     <script src="./scripts/meet1.js" type="module"></script>
-    <!-- <script src="./js/meet5.js" type="module"></script> -->
+    <script src="./scripts/prism.js" type="module"></script>
   </body>
 </html>

@@ -1,0 +1,14 @@
+{
+  "name": "js-r-e-p-e-t-ition",
+  "version": "1.0.0",
+  "description": "js-repetition",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Valeriy Svystun",
+  "license": "ISC",
+  "dependencies": {
+    "prismjs": "^1.29.0"
+  }
+}
