@@ -239,4 +239,11 @@ font-size: 26px;
     background-color: #555 /* Light Black */
   }
 
+
+  .conic {
+    display: block;
+    height: 150px;
+    width: 190px;
+    background: conic-gradient( blue 0 65%, gold 0 85%, blue 0 100%);
+  }
  

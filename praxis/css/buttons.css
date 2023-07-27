@@ -92,22 +92,24 @@ button:not(:last-child) {
   border-radius: 5px;
   /* border: 13px solid black; */
   padding: 10px 20px;
-  color: orange;
-  /* color: blue; */
+  /* color: orange; */
+  color: blue;
   /* color:orangered; */
-  background: linear-gradient(to left, blue 50%, royalblue 50%);
+  /* background: linear-gradient(to left, blue 50%, royalblue 50%); */
+  background: conic-gradient( blue 0 65%, gold 0 85%, blue 0 100%);
+  /* background: conic-gradient( gold 0 65%, blue 0 85%, gold 0 100%); */
   /* background: linear-gradient(.25turn, black 50%, orange 50% 100%); */
   /* background: conic-gradient(yellowgreen 10%, gold 40deg 35%, #f06 100deg); */
   /* background: conic-gradient(black 25%, white 0deg 50%, black 0deg 75%, white 0deg); */
 
   background-size: 200% 100%;
-  transition: background-position 0.5s;
+  transition: background-position 0.5s, color 0.5s;
 }
 
 .color-button:hover {
-  background-position: -100% 0;
+  background-position: -200% 0;
   
-  color:orange;
+  /* color:gold; */
 }
 
 
