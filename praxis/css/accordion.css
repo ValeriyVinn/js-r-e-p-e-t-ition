@@ -185,3 +185,7 @@ ul {
     color: rgb(143, 255, 197);
   }
   
+  .language-html,
+  .language-js {
+    border-radius: 5px;
+  }

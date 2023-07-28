@@ -21,7 +21,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/homeworks & codewars.css" />
-    
+
     <link rel="stylesheet" href="./prism-default.css" />
     <link rel="stylesheet" href="./prism-solarized-light.css" />
     <link rel="stylesheet" href="./css/prism.css" />
@@ -74,99 +74,181 @@
     <main>
       <section class="section container">
         <h1 class="header">Good luck!</h1>
-<div>
-  <pre><code class="language-html">   
-          &#x3C;a href=&#x22;./homeworks &#x26; codewars.html&#x22; class=&#x22;nav-link&#x22;&#x3E;Homeworks &#x26; Codewars&#x3C;/a&#x3E;
-          &#x3C;a href=&#x22;./sandbox.html&#x22; class=&#x22;nav-link&#x22;&#x3E;Sandbox&#x3C;/a&#x3E;
-          &#x3C;a href=&#x22;./praxis/praxis.html&#x22; class=&#x22;nav-link&#x22;&#x3E;Praxis&#x3C;/a&#x3E;
-          &#x3C;a href=&#x22;./pets/pets.html&#x22; class=&#x22;nav-link&#x22;&#x3E;Pets&#x3C;/a&#x3E;
-</code></pre>
-</div>
-  <div class="papa-polo">
-  <div class="polovina">
-    <pre><code class="language-css">
-  
-      .nav {
-      padding: 15px 0px;
-    }
-      color: darkblue;
-      text-decoration: underline 2px darkblue;
-    }
-    
-    .section {
-      min-width: 700px;
-      min-height: 700px;
-      margin: 20px auto;
-      padding: 20px 40px;
-    }
-    </code></pre>
-    
-  </div>
-  <div class="polovina">
-    <pre><code class="language-css">
-  
-      .nav {
-      padding: 15px 0px;
-    }
-      color: darkblue;
-      text-decoration: underline 2px darkblue;
-    }
-    
-    .section {
-      min-width: 700px;
-      min-height: 700px;
-      margin: 20px auto;
-      padding: 20px 40px;
-    }
-    </code></pre>
-    
-  </div>
-</div>      
 
-      
+        <!-- ============= Unit ================= -->
+        <button class="accordion">
+          Build a function that returns an array of integers from n to 1 where
+          n>0. Example : n=5 --> [5,4,3,2,1]
+        </button>
+        <div class="panel">
+          <pre><code class="language-js">
+            const reverseSeq = n => {
+              if (n <= 0) {
+                return "Error";
+              }
+              const reverseArray = [];
+              for (let i = n; i > 0; i -= 1) {
+                reverseArray.push (i);
+              }
+              return reverseArray;  
+            };
+          </code></pre>
+          <pre><code class="language-js">
+            const reverseSeq = n => {
+               return Array(n).fill(0).map((e, i) => n - i );
+            };
+          </code></pre>
+        </div>
 
-        <pre><code class="language-js">
-  const refs = {
-  openModalBtn: document.querySelector('[data-action="open-modal"]'),
-  closeModalBtn: document.querySelector('[data-action="close-modal"]'),
-  backdrop: document.querySelector('.js-backdrop'),
-};
+        <!-- ============= Unit ================= -->
 
-refs.openModalBtn.addEventListener('click', onOpenModal);
-refs.closeModalBtn.addEventListener('click', onCloseModal);
-refs.backdrop.addEventListener('click', onBackdropClick);
+        <button class="accordion">
+          In this simple assignment you are given a number and have to make it
+          negative. But maybe the number is already negative?
+        </button>
+        <div class="panel">
+          <pre><code class="language-js">
+            function makeNegative(num) {
+              return -Math.abs(num);
+            }
+        </code></pre>
+        </div>
 
-function onOpenModal() {
-  window.addEventListener('keydown', onEscKeyPress);
-  document.body.classList.add('show-modal');
-}
+        <!-- ============= Unit ================= -->
 
-function onCloseModal() {
-  window.removeEventListener('keydown', onEscKeyPress);
-  document.body.classList.remove('show-modal');
-}
+        <button class="accordion">Green</button>
+        <div class="panel">
+          <p>
+            Green is the color between cyan and yellow on the visible spectrum.
+            It is evoked by light which has a dominant wavelength of roughly
+            495–570 nm.
+          </p>
+        </div>
 
-function onBackdropClick(event) {
-  if (event.currentTarget === event.target) {
-    console.log('Кликнули именно в бекдроп!!!!');
-    onCloseModal();
-  }
-}
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Blue</button>
+        <div class="panel">
+          <p>
+            The colour of the clear sky or the deep sea, between green and
+            violet in the visible spectrum, and one of the primary additive
+            colours for transmitted light; the colour obtained by subtracting
+            red and green from white light using magenta and cyan filters; or
+            any colour resembling this.
+          </p>
+        </div>
+        <!-- ============= Unit ================= -->
 
-function onEscKeyPress(event) {
-  // console.log(event.code)
-  const ESC_KEY_CODE = 'Escape';
-  const isEscKey = event.code === ESC_KEY_CODE;
+        <button class="accordion">Green</button>
+        <div class="panel">
+          <p>
+            Green is the color between cyan and yellow on the visible spectrum.
+            It is evoked by light which has a dominant wavelength of roughly
+            495–570 nm.
+          </p>
+        </div>
 
-  if (isEscKey) {
-    onCloseModal();
-  }
-}
-</code></pre>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Green</button>
+        <div class="panel">
+          <p>
+            Green is the color between cyan and yellow on the visible spectrum.
+            It is evoked by light which has a dominant wavelength of roughly
+            495–570 nm.
+          </p>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Blue</button>
+        <div class="panel">
+          <p>
+            The colour of the clear sky or the deep sea, between green and
+            violet in the visible spectrum, and one of the primary additive
+            colours for transmitted light; the colour obtained by subtracting
+            red and green from white light using magenta and cyan filters; or
+            any colour resembling this.
+          </p>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Green</button>
+        <div class="panel">
+          <p>
+            Green is the color between cyan and yellow on the visible spectrum.
+            It is evoked by light which has a dominant wavelength of roughly
+            495–570 nm.
+          </p>
+        </div>
+
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Green</button>
+        <div class="panel">
+          <p>
+            Green is the color between cyan and yellow on the visible spectrum.
+            It is evoked by light which has a dominant wavelength of roughly
+            495–570 nm.
+          </p>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Blue</button>
+        <div class="panel">
+          <p>
+            The colour of the clear sky or the deep sea, between green and
+            violet in the visible spectrum, and one of the primary additive
+            colours for transmitted light; the colour obtained by subtracting
+            red and green from white light using magenta and cyan filters; or
+            any colour resembling this.
+          </p>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Green</button>
+        <div class="panel">
+          <p>
+            Green is the color between cyan and yellow on the visible spectrum.
+            It is evoked by light which has a dominant wavelength of roughly
+            495–570 nm.
+          </p>
+        </div>
+
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Green</button>
+        <div class="panel">
+          <p>
+            Green is the color between cyan and yellow on the visible spectrum.
+            It is evoked by light which has a dominant wavelength of roughly
+            495–570 nm.
+          </p>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Blue</button>
+        <div class="panel">
+          <p>
+            The colour of the clear sky or the deep sea, between green and
+            violet in the visible spectrum, and one of the primary additive
+            colours for transmitted light; the colour obtained by subtracting
+            red and green from white light using magenta and cyan filters; or
+            any colour resembling this.
+          </p>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Green</button>
+        <div class="panel">
+          <p>
+            Green is the color between cyan and yellow on the visible spectrum.
+            It is evoked by light which has a dominant wavelength of roughly
+            495–570 nm.
+          </p>
+        </div>
+        <!-- ============= Unit ================= -->
       </section>
     </main>
-    <script src="./scripts/meet1.js" type="module"></script>
+    <script src="./scripts/homeworks & codewars.js" type="module"></script>
     <script src="./scripts/prism/prism-coy.js" type="module"></script>
-    
   </body>
 </html>

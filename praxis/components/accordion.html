@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../css/accordion.css" />
-    <link rel="stylesheet" href="../../css/prism.css" />
+    <link rel="stylesheet" href="../../css/prism/prism-solarized-light.css" />
   </head>
   <body>
     <header class="header container">
@@ -40,7 +40,7 @@
 
         <div class="backdrop js-backdrop">
           <div class="modal">
-            <pre><code class="language-html"><h2>html</h2>
+            <pre><code class="language-html">
   &ltbutton class="accordion"&gtRed&lt/button&gt
   &ltdiv class="panel"&gt
   &ltp&gt
@@ -73,7 +73,7 @@
   &lt/div&gt
 </code></pre>
 
-<pre><code class="language-js"><h2>js</h2>
+            <pre><code class="language-js">
 const acc = document.getElementsByClassName("accordion");
 let i;
 
@@ -91,8 +91,6 @@ for (i = 0; i < acc.length; i++) {
 
 
 </code></pre>
-
-            <div></div>
 
             <button
               type="button"
@@ -137,6 +135,6 @@ for (i = 0; i < acc.length; i++) {
       </section>
     </main>
     <script src="../scripts/accordion.js" type="module"></script>
-    <script src="../../scripts/prism.js" type="module"></script>
+    <script src="../../scripts/prism/prism-default.js" type="module"></script>
   </body>
 </html>

@@ -48,6 +48,7 @@ a:hover {
   font-size: 38px;
   color: gold;
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  margin-bottom: 30px;
 }
 
 .header::first-letter {
@@ -108,12 +109,60 @@ a:hover {
   background-color: royalblue;
 }
 
-.polovina:not(:last-child) {
-  margin-right: 70px;
+
+
+/* ========================================= */
+
+.accordion {
+  display: block;
+  background-color:rgb(209, 219, 228);
+  color: royalblue;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: text;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  user-select: text;
 }
-.polovina {
-  width: 600px;
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color:aliceblue;
 }
-.papa-polo {
-  display: flex;
+
+/* Style the accordion panel. Note: hidden by default */
+
+/* !----------------without animation----------- */
+/* .panel {
+  padding: 0 18px;
+  background-color:rgb(179, 201, 224);
+  display: none;
+  overflow: hidden;
+} */
+/* !----------------without animation----------- */
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* *----------------with animation----------- */
+.panel {
+  padding: 0 18px;
+  background-color:aliceblue;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 10px;
 }
