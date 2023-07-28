@@ -107,3 +107,13 @@ a:hover {
 .dropdown:hover .dropbtn {
   background-color: royalblue;
 }
+
+.polovina:not(:last-child) {
+  margin-right: 70px;
+}
+.polovina {
+  width: 600px;
+}
+.papa-polo {
+  display: flex;
+}
