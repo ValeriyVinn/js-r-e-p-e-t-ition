@@ -16,7 +16,7 @@ const shouldConfirm = false;
  * * - Оператор typeof
  */
 
-const type = typeof isOpen;
+const type = typeof message;
 
 console.log(type);
 

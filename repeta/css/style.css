@@ -1,0 +1,33 @@
+.repeta-go-home {
+    
+    background-color: darkslateblue;
+    border-radius: 3px;
+    display: block;
+    padding: 5px 10px;
+width: 300px;
+    text-decoration: none;
+    color: gold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.repeta-home-nav {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.repeta-home-link {
+    background-color: slateblue;
+    display: block;
+    padding: 5px 10px;
+width: 300px;
+    text-decoration: none;
+    color: gold;
+    
+    font-size: 18px;
+}
+
+.repeta-home-link:not(:last-child) {
+    margin-bottom: 10px;
+}
