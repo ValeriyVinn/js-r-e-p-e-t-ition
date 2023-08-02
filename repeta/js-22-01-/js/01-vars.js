@@ -25,5 +25,7 @@ console.log(type);
  */
 
 // console.log('До');
-// alert('qweqweqwe');
+// alert("I'm alert");
 // console.log('После');
+
+

@@ -2,11 +2,11 @@
  * Парс числа с Number.parseInt() и Number.parseFloat()
  */
 
-let elementWidth = '50px';
+// let elementWidth = '50px';
 // elementWidth = Number.parseInt(elementWidth);
 // console.log('elementWidth: ', elementWidth);
 
-let elementHeight = '200.74px';
+// let elementHeight = '200.74px';
 // elementHeight = Number.parseFloat(elementHeight);
 // console.log('elementHeight: ', elementHeight);
 
@@ -14,7 +14,7 @@ let elementHeight = '200.74px';
  * - Метод число.toFixed(digits)
  * - Матрёшки на примере  console.log(Number(число.toFixed(digits)))
  */
-let salary = 1300.16472;
+let salary = 1300.16572;
 // salary = Number(salary.toFixed(2));
 
 // console.log(salary);
@@ -35,11 +35,13 @@ let value = 'Эту строку невозможно привести к чис
  * - Exponent operator
  */
 
-// const base = 2;
-// const power = 5;
+const base = 2;
+const power = 5;
 
 // const result = Math.pow(base, power);
+// console.log(Math.abs(base));
 // console.log(base ** power);
+// console.log(Math);
 
 /*
  * Напиши скрипт который просит пользователя ввести число и степень,
